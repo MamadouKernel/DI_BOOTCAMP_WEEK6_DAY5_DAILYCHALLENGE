@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author kernel-mk
+ * @author konate-mk
  */
 public class GuessTheNumber {
 
@@ -34,11 +34,19 @@ public class GuessTheNumber {
           System.out.println("Le nombre est plus grand!");
         }
       } while (guess != targetNumber && attempts < 5);
-	  if(guess == targetNumber) {
-      	System.out.println("Félicitations! Tu as deviné le nombre en " + attempts + " tentatives.");
-	  } else{
-		System.out.println("Tu as perdu! Le nombre était " + targetNumber);
-	  }
+      if (guess == targetNumber) {
+        System.out.println(
+          "Félicitations! Tu as deviné le nombre en " +
+          attempts +
+          " tentatives."
+        );
+      } else {
+        System.out.println("Tu as perdu! Le nombre était " + targetNumber);
+      }
     }
   }
 }
+/**
+ *
+ * @author konate-mk
+ */
